@@ -1,11 +1,12 @@
 const Discord = require('discord.js');
+const { prefix, token } = require('./config.json');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
-
+client.once('ready', () => {
+	console.log('Ready!');
+})
 client.on('message', message => {
+  //console.log(message.content);
 	if(message.content.startsWith(`${prefix}dhuy`)) {
 		message.channel.send("Tui xin loi")
 		}
