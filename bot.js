@@ -1,7 +1,21 @@
-const Discord = require('discord.js');
+eeeconst Discord = require('discord.js');
 const prefix = "#";
 const client = new Discord.Client();
-
+const exampleEmbed = new Discord.RichEmbed()
+.setColor('#0099ff')
+.setTitle('Some title')
+.setURL('https://discord.js.org/')
+.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+.setDescription('Some description here')
+.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+.addField('Regular field title', 'Some value here')
+.addBlankField()
+.addField('Inline field title', 'Some value here', true)
+.addField('Inline field title', 'Some value here', true)
+.addField('Inline field title', 'Some value here', true)
+.setImage('https://i.imgur.com/wSTFkRM.png')
+.setTimestamp()
+.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 client.once('ready', () => {
 	console.log('Ready!');
 })
@@ -36,23 +50,7 @@ client.on('message', message => {
 		message.channel.send("BUỔI SÁNG:\nThứ 2: Văn - Văn - Toán - Toán\nThứ 3: Lý - Lý - Hóa - Sinh - Sinh\nThứ 4: Anh - Anh - Toán - Lý - GDCD\nThứ 5: Văn - Văn - Anh - Sử - Địa\nThứ 6: Hóa - Hóa - Toán - Toán - Sinh hoạt\n------------------------\nBUỔI CHIỀU:\nThứ 2 (Tiết 2345): Thể dục - Thể dục - Lý - Lý\nThứ 4 (Tiết 234): KTCN - KTCN - Quốc phòng \nThứ 6 (Tiết 2345): Toán - Toán - Tin - Tin")	
 	}
 	if(message.content.startsWith(`${prefix}info`)) {
-		const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setTitle('Some title')
-	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
-	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.addField('Regular field title', 'Some value here')
-	.addBlankField()
-	.addField('Inline field title', 'Some value here', true)
-	.addField('Inline field title', 'Some value here', true)
-	.addField('Inline field title', 'Some value here', true)
-	.setImage('https://i.imgur.com/wSTFkRM.png')
-	.setTimestamp()
-	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-
-channel.send(exampleEmbed);
+		message.channel.send(exampleEmbed);
 	}
 })
 client.login(process.env.BOT_TOKEN);
