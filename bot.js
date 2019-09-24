@@ -38,6 +38,7 @@ client.on('message', message => {
 	if(message.content.startsWith(`${prefix}info`)) {
 		const embed = new Discord.RichEmbed()
 		.setTitle('Title')
+		.setThumbnail(member.user.displayAvatarURL)
 		message.channel.send({embed});
 	}
 })
