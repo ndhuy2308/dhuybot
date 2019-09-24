@@ -1,1 +1,1 @@
-worker: node bot.js
+worker: worker: npm start --save node bot.js
