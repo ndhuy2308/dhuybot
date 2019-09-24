@@ -37,7 +37,7 @@ client.on('message', message => {
 	}
 	if(message.content.startsWith(`${prefix}info`)) {
 		const embed = new Discord.RichEmbed()
-  .setTitle("This is your title, it can hold 256 characters")
+  .setTitle("TV: ")
   .setAuthor("Author Name", member.user.displayAvatarURL)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
