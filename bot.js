@@ -29,8 +29,8 @@ client.on('message', (message, member) => {
 	if(message.content.startsWith(`${prefix}sin`)) {
 		message.channel.send("Khunggg")
 		}
-	if(message.content.startsWith(`${prefix}lun`)) {
-		message.channel.send("Là đồ ngốc")
+	if(uidstring = "525658241242234891") {
+		message.channel.send("Lùn là đồ ngốc <3")
 		}
 	if(message.content.startsWith(`${prefix}tkb`) && uidstring == "493299951590440961" || message.content.startsWith(`${prefix}tkb`) && uidstring == "479877128368685056") {
 		var embed = new Discord.RichEmbed()
