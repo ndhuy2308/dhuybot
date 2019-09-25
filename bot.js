@@ -30,7 +30,7 @@ client.on('message', (message, member) => {
 	if(message.content.startsWith(`${prefix}sin`)) {
 		message.channel.send("Khungg")
 		}
-	if(message.content.startsWith(`${prefix}tkb`) && uidstring == "493299951590440961") {
+	if(message.content.startsWith(`${prefix}tkb`) && uidstring == "493299951590440961" || uidstring == "479877128368685056") {
 		var embed = new Discord.RichEmbed()
 		.setColor('#0099ff')
   		.setAuthor("DHuy BOT - Thời khóa biểu", message.author.avatarURL)
