@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const prefix = "#";
-const superagent = require("superagent");
 const client = new Discord.Client();
 client.once('ready', () => {
 	console.log('Ready!');
@@ -29,9 +28,6 @@ client.on('message', (message, member) => {
 		message.channel.send("Tui xin loi")
 		}
 	if(message.content.startsWith(`${prefix}sin`)) {
-		message.channel.send("Khunggg")
-		}
-	if(message.content.startsWith(`${prefix}cat`)) {
 		message.channel.send("Khunggg")
 		}
 	if(message.content.startsWith(`${prefix}tkb`) && uidstring == "493299951590440961" || message.content.startsWith(`${prefix}tkb`) && uidstring == "479877128368685056") {
