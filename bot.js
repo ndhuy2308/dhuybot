@@ -45,7 +45,7 @@ client.on('message', (message, member) => {
 		.addField("Thứ 2 (Tiết 2345):","Thể dục - Thể dục - Lý - Lý")
 		.addField("Thứ 4 (Tiết 234):","KTCN - KTCN - Quốc phòng ")
 		.addField("Thứ 6 (Tiết 2345):","Toán - Toán - Tin - Tin")
-		.setFooter('ID', message.author.id)
+		.setFooter("ID", message.author.id)
 		;
   		message.channel.send(embed);
 	}
