@@ -33,9 +33,7 @@ client.on('message', (message, member) => {
 	}
 	if(message.content.startsWith(`${prefix}test`)) {
 		let embed = new Discord.RichEmbed()
-		.setTitle("THONG TIN THANH VIEN")
-		.setThumbnail(member.user.displayAvatarURL)
-		.addField("Tên Discord: ", member.displayName);
+		.setTitle("THONG TIN THANH VIEN");
 		message.channel.send({embed});
 	}
 })
