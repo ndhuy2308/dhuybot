@@ -20,7 +20,7 @@ if(guild.systemChannel){
 });
 
 
-client.on('message', message => {
+client.on('message', (message, member) => {
   //console.log(message.content);
 	if(message.content.startsWith(`${prefix}dhuy`)) {
 		message.channel.send("Tui xin loi")
