@@ -50,7 +50,8 @@ client.on('message', (message, member) => {
 		.addField("Username:",message.author.username)
 		;
   		message.channel.send(embed);
-		message.channel.send(uidstring);
+		If (uidstring !== "dhuy") {
+			message.channel.send("Right") }
 	}
 })
 client.login(process.env.BOT_TOKEN);
