@@ -24,7 +24,7 @@ client.on('message', (message, member) => {
 	var uid = message.author.id;
 	var uidstring = "" + uid;
 	if(message.content.startsWith(`${prefix}delete`) && uidstring == "493299951590440961" && uidstring == "479877128368685056") {
-		member.guild.channels.get('626373988343611402').send("pls clean 100");
+		message.channel.send("pls clean 100")
 	}
 	if(message.content.startsWith(`${prefix}dhuy`) && uidstring == "493299951590440961") {
 		message.channel.send("Tui xin loi")
