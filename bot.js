@@ -23,6 +23,12 @@ client.on('message', (message, member) => {
   //console.log(message.content);
 	var uid = message.author.id;
 	var uidstring = "" + uid;
+	if(message.content.startsWith(`${prefix}delete`) && uidstring == "493299951590440961" || message.content.startsWith(`${prefix}delete`) && uidstring == "479877128368685056") {
+		channel.fetchMessages()
+		.then(messages => messages.array().forEach(
+ 		 message => message.author.equals(client.user) && message.delete()
+		));
+	Ư
 	if(message.content.startsWith(`${prefix}dhuy`) && uidstring == "493299951590440961") {
 		message.channel.send("Tui xin loi")
 		}
