@@ -48,7 +48,7 @@ client.on('message', (message, member) => {
 		;
   		message.channel.send(embed);
 	}
-	Else if (message.content.startsWith(`${prefix}tkb`) {
+	Else if (message.content.startsWith(`${prefix}tkb`)) {
 		message.channel.send("Không có TKB.");
 	}
 })
