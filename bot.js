@@ -33,6 +33,7 @@ client.on('message', (message, member) => {
 	}
 	if(message.content.startsWith(`${prefix}test`)) {
 		var uid = message.author.id;
+		if?(uid == "493299951590440961") {
 		var embed = new Discord.RichEmbed()
 		.setColor('#0099ff')
   		.setAuthor("DHuy BOT - Thời khóa biểu", message.author.avatarURL)
@@ -46,8 +47,9 @@ client.on('message', (message, member) => {
 		.addField("Thứ 2 (Tiết 2345):","Thể dục - Thể dục - Lý - Lý")
 		.addField("Thứ 4 (Tiết 234):","KTCN - KTCN - Quốc phòng ")
 		.addField("Thứ 6 (Tiết 2345):","Toán - Toán - Tin - Tin")
-		.addField("Username",uid)
+		.addField("User ID:",uid)
 		;
+		}
   		message.channel.send(embed);
 	}
 })
