@@ -35,7 +35,6 @@ client.on('message', (message, member) => {
 		var embed = new Discord.RichEmbed()
   		.setTitle("Thời khóa biểu")
   		.setAuthor("DHuy BOT", message.author.avatarURL)
-  		.setDescription("#tkb")
 		.addField("Mot","Hai");
   		message.channel.send(embed);
 	}
