@@ -9,7 +9,7 @@ client.on("guildMemberAdd", (member) => { // Check out previous chapter for info
 let guild = member.guild; 
 let memberTag = member.user.tag; 
 if(guild.systemChannel){
-	member.guild.channels.get('phong-lon').send(new Discord.RichEmbed() // Creating instance of Discord.RichEmbed
+	member.guild.channels.get('626373988343611402').send(new Discord.RichEmbed() // Creating instance of Discord.RichEmbed
 	.setTitle("Một con gà mới đã vào Discord: ") // Calling method setTitle on constructor. 
 	.setDescription(memberTag) // Setting embed description
 	.setThumbnail(member.user.displayAvatarURL) // The image on the top right; method requires an url, not a path to file!
