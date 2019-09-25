@@ -32,11 +32,11 @@ client.on('message', (message, member) => {
 		message.channel.send("BUỔI SÁNG:\nThứ 2: Văn - Văn - Toán - Toán\nThứ 3: Lý - Lý - Hóa - Sinh - Sinh\nThứ 4: Anh - Anh - Toán - Lý - GDCD\nThứ 5: Văn - Văn - Anh - Sử - Địa\nThứ 6: Hóa - Hóa - Toán - Toán - Sinh hoạt\n------------------------\nBUỔI CHIỀU:\nThứ 2 (Tiết 2345): Thể dục - Thể dục - Lý - Lý\nThứ 4 (Tiết 234): KTCN - KTCN - Quốc phòng \nThứ 6 (Tiết 2345): Toán - Toán - Tin - Tin")	
 	}
 	if(message.content.startsWith(`${prefix}test`)) {
-		let embed = new Discord.RichEmbed()
-		.setTitle("THONG TIN THANH VIEN")
-		.setAuthor("My Name", message.author.avatarURL)
-		.addfield("Ten","DHuy");
-		message.channel.send({embed});
+		var embed = new Discord.RichEmbed()
+ 		.setTitle("My Title")
+  		.setAuthor("My Name", message.author.avatarURL)
+  		.setDescription("My Description");
+   		channel.send(embed);
 	}
 })
 client.login(process.env.BOT_TOKEN);
