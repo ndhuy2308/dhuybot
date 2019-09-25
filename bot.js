@@ -50,7 +50,7 @@ client.on('message', (message, member) => {
 		.addField("Username:",message.author.username)
 		;
   		message.channel.send(embed);
-		If (uidstring !== 'dhuy') {
+		If (uidstring == "dhuy") {
 			message.channel.send("Right"); 
 		}
 	}
