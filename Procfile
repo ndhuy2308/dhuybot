@@ -1,1 +1,1 @@
-worker: npm install superagent
+worker: node bot.js
