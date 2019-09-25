@@ -24,7 +24,7 @@ client.on('message', (message, member) => {
   //console.log(message.content);
 	var uid = message.author.id;
 	var uidstring = "" + uid;
-	if(message.content.startsWith(`${prefix}dhuy`)) {
+	if(message.content.startsWith(`${prefix}dhuy`) && uidstring == "493299951590440961") {
 		message.channel.send("Tui xin loi")
 		}
 	if(message.content.startsWith(`${prefix}sin`)) {
