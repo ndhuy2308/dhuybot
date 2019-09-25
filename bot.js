@@ -34,6 +34,7 @@ client.on('message', (message, member) => {
 	if(message.content.startsWith(`${prefix}test`)) {
 		let embed = new Discord.RichEmbed()
 		.setTitle("THONG TIN THANH VIEN")
+		.setAuthor("My Name", message.author.avatarURL)
 		.addfield("Ten","DHuy");
 		message.channel.send({embed});
 	}
