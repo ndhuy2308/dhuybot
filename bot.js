@@ -11,7 +11,7 @@ const embed = new Discord.RichEmbed()
   .setDescription("This is the main body of text, it can hold 2048 characters.")
   .setFooter("This is the footer text, it can hold 2048 characters", "http://i.imgur.com/w1vhFSR.png")
   .setImage("https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-9/53292289_2041911859255275_2460302097740988416_o.jpg?_nc_cat=103&_nc_oc=AQmdW-HYKgog_6HAhQKY_2CwSQDgGo63Tlx0TME_Y77Og_DCyFAiNNQqUmNVjwWCbmfepJfweAZ8L8qzCzPgwJcM&_nc_ht=scontent.fsgn5-7.fna&oh=99dd8f414d15bd0eedcd5c928ceb0f5e&oe=5E3040D5")
-  .setThumbnail(member.user.displayAvatarURL)
+  .setThumbnail("ha")
   /*
    * Takes a Date object, defaults to current date.
    */
