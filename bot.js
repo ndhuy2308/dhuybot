@@ -48,8 +48,5 @@ client.on('message', (message, member) => {
 		;
   		message.channel.send(embed);
 	}
-	if (message.content.startsWith(`${prefix}tkb`)) {
-		message.channel.send("Không có TKB.");
-	}
 })
 client.login(process.env.BOT_TOKEN);
