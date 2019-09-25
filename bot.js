@@ -35,7 +35,7 @@ client.on('message', (message, member) => {
 		var embed = new Discord.RichEmbed()
   		.setTitle("My Title")
   		.setAuthor("Hi", message.author.avatarURL)
-  		.setDescription(message.author.username);
+  		.setDescription(message.author.username, message.author.tag, message.author.id);
   		message.channel.send(embed);
 	}
 })
