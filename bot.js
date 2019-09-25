@@ -33,9 +33,15 @@ client.on('message', (message, member) => {
 	}
 	if(message.content.startsWith(`${prefix}test`)) {
 		var embed = new Discord.RichEmbed()
+		.setColor('#0099ff')
   		.setTitle("Thời khóa biểu")
   		.setAuthor("DHuy BOT", message.author.avatarURL)
-		.addField("Mot","Hai");
+		.addField("BUỔI SÁNG")
+		.addField("Thứ 2","Văn - Văn - Toán - Toán")
+		.addField("Thứ 3","Lý  - Lý  - Hóa  - Sinh - Sinh")
+		.addField("Thứ 4","Anh - Anh - Toán - Lý   - GDCD")
+		.addField("Thứ 5","Văn - Văn - Anh  - Sử   - Địa")
+		.addField("Thứ 6","Hóa - Hóa - Toán - Toán - Sinh Hoạt");
   		message.channel.send(embed);
 	}
 })
