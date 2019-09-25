@@ -1,4 +1,4 @@
-eeeconst Discord = require('discord.js');
+const Discord = require('discord.js');
 const prefix = "#";
 const client = new Discord.Client();
 client.once('ready', () => {
