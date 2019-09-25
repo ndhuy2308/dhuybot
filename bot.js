@@ -33,7 +33,7 @@ client.on('message', (message, member) => {
 	}
 	if(message.content.startsWith(`${prefix}test`)) {
 		var uid = message.author.id;
-		if(uid === "493299951590440961") {
+		if(uid = "493299951590440961") {
 		var embed = new Discord.RichEmbed()
 		.setColor('#0099ff')
   		.setAuthor("DHuy BOT - Thời khóa biểu", message.author.avatarURL)
@@ -50,7 +50,7 @@ client.on('message', (message, member) => {
 		.addField("Username:",message.author.username)
 		;
 		}
-		if(uid === "479877128368685056") {
+		if(uid = "479877128368685056") {
 		var embed = new Discord.RichEmbed()
 		.setColor('#0099ff')
   		.setAuthor("DHuy BOT - Thời khóa biểu", message.author.avatarURL)
