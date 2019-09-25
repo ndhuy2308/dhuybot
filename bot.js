@@ -33,9 +33,9 @@ client.on('message', (message, member) => {
 	}
 	if(message.content.startsWith(`${prefix}test`)) {
 		var embed = new Discord.RichEmbed()
-  		.setTitle("My Title")
-  		.setAuthor("Hi", message.author.avatarURL)
-  		.setDescription(message.author.username, message.author.tag, message.author.id);
+  		.setTitle("Thời khóa biểu")
+  		.setAuthor("DHuy BOT", message.author.avatarURL)
+  		.setDescription(message.author.username);
   		message.channel.send(embed);
 	}
 })
