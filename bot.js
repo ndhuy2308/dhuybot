@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const prefix = "#";
 const client = new Discord.Client();
-const superagent = require("superagent");
+
 client.once('ready', () => {
 	console.log('Ready!');
 })
