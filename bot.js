@@ -47,7 +47,23 @@ client.on('message', (message, member) => {
 		.addField("Thứ 2 (Tiết 2345):","Thể dục - Thể dục - Lý - Lý")
 		.addField("Thứ 4 (Tiết 234):","KTCN - KTCN - Quốc phòng ")
 		.addField("Thứ 6 (Tiết 2345):","Toán - Toán - Tin - Tin")
-		.addField("User ID:",uid)
+		.addField("Username:",message.author.username)
+		;
+		}
+		if?(uid == "479877128368685056") {
+		var embed = new Discord.RichEmbed()
+		.setColor('#0099ff')
+  		.setAuthor("DHuy BOT - Thời khóa biểu", message.author.avatarURL)
+		.addField("BUỔI SÁNG","-------------------------------")
+		.addField("Thứ 2","")
+		.addField("Thứ 3","")
+		.addField("Thứ 4","")
+		.addField("Thứ 5","")
+		.addField("Thứ 6","")
+		.addField("BUỔI CHIỀU","-------------------------------")
+		.addField("Thứ 2:","")
+		.addField("Thứ 6:","")
+		.addField("Username:",message.author.username)
 		;
 		}
   		message.channel.send(embed);
