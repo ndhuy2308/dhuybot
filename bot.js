@@ -49,9 +49,6 @@ client.on('message', (message, member) => {
 		.addField("Username:",message.author.username)
 		;
   		message.channel.send(embed);
-		If (uid == "479877128368685056") {
-			message.channel.send("Duoc");
-		} Else { message.channel.send("Khong duoc"); }
 	}
 })
 client.login(process.env.BOT_TOKEN);
