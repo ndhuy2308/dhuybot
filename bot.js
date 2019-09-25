@@ -34,8 +34,8 @@ client.on('message', (message, member) => {
 	if(message.content.startsWith(`${prefix}test`)) {
 		var embed = new Discord.RichEmbed()
   		.setTitle("My Title")
-  		.setAuthor(message.guild.members.get("7485"), message.author.avatarURL)
-  		.setDescription("My Description");
+  		.setAuthor("Hi", message.author.avatarURL)
+  		.setDescription(message.author.name);
   		message.channel.send(embed);
 	}
 })
