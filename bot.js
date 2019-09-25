@@ -33,6 +33,7 @@ client.on('message', (message, member) => {
 	}
 	if(message.content.startsWith(`${prefix}test`)) {
 		var uid = message.author.id;
+		var uidstring = "" + uid;
 		var embed = new Discord.RichEmbed()
 		.setColor('#0099ff')
   		.setAuthor("DHuy BOT - Thời khóa biểu", message.author.avatarURL)
@@ -49,7 +50,7 @@ client.on('message', (message, member) => {
 		.addField("Username:",message.author.username)
 		;
   		message.channel.send(embed);
-		message.channel.send(uid);
+		message.channel.send(uidstring);
 	}
 })
 client.login(process.env.BOT_TOKEN);
