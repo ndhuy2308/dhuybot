@@ -51,7 +51,7 @@ client.on('message', (message, member) => {
 		;
   		message.channel.send(embed);
 		If (uidstring !== "dhuy") {
-			message.channel.send("Right") 
+			message.channel.send("Right"); 
 		}
 	}
 })
