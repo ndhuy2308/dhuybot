@@ -49,7 +49,7 @@ client.on('message', (message, member) => {
   		message.channel.send(embed);
 	}
 		if(message.content.startsWith(`${prefix}huytkb`) && uidstring == "493299951590440961" || message.content.startsWith(`${prefix}huytkb`) && uidstring == "479877128368685056") {
-		message.channel.send("TKB DHuy", {files: ["http://a3tna.000webhostapp.com/tkb/TKB-A3TNA.png"]});
+		message.channel.send("TKB DHuy", {files: ["https://a3tna1720.tk/upload/server/php/files/TKB-A3TNA.png"]});
 	}
 })
 client.login(process.env.BOT_TOKEN);
