@@ -24,7 +24,7 @@ client.on('message', (message, member) => {
 	var uid = message.author.id;
 	var uidstring = "" + uid;
 	if(message.content.startsWith(`${prefix}dhuy`)) {
-		message.channel.send("Tui xin loi")
+		message.channel.send("https://duchuy2308.tk")
 		}
 
 		if(message.content.startsWith(`${prefix}huytkb`) && uidstring == "493299951590440961" || message.content.startsWith(`${prefix}huytkb`) && uidstring == "479877128368685056") {
