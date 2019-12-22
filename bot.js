@@ -23,31 +23,10 @@ client.on('message', (message, member) => {
   //console.log(message.content);
 	var uid = message.author.id;
 	var uidstring = "" + uid;
-	if(message.content.startsWith(`${prefix}dhuy`) && uidstring == "493299951590440961") {
+	if(message.content.startsWith(`${prefix}dhuy`)) {
 		message.channel.send("Tui xin loi")
 		}
-	if(message.content.startsWith(`${prefix}sin`)) {
-		message.channel.send("Khunggg")
-		}
 
-	if(message.content.startsWith(`${prefix}tkb`) && uidstring == "493299951590440961" || message.content.startsWith(`${prefix}tkb`) && uidstring == "479877128368685056") {
-		var embed = new Discord.RichEmbed()
-		.setColor('#0099ff')
-  		.setAuthor("DHuy BOT - Thời khóa biểu", message.author.avatarURL)
-		.addField("BUỔI SÁNG","-------------------------------")
-		.addField("Thứ 2","Văn - Văn - Toán - Toán")
-		.addField("Thứ 3","Lý  - Lý  - Hóa  - Sinh - Sinh")
-		.addField("Thứ 4","Anh - Anh - Toán - Lý   - GDCD")
-		.addField("Thứ 5","Văn - Văn - Anh  - Sử   - Địa")
-		.addField("Thứ 6","Hóa - Hóa - Toán - Toán - Sinh Hoạt")
-		.addField("BUỔI CHIỀU","-------------------------------")
-		.addField("Thứ 2 (Tiết 2345):","Thể dục - Thể dục - Lý - Lý")
-		.addField("Thứ 4 (Tiết 234):","KTCN - KTCN - Quốc phòng ")
-		.addField("Thứ 6 (Tiết 2345):","Toán - Toán - Tin - Tin")
-		.addField("Username:",message.author.username)
-		;
-  		message.channel.send(embed);
-	}
 		if(message.content.startsWith(`${prefix}huytkb`) && uidstring == "493299951590440961" || message.content.startsWith(`${prefix}huytkb`) && uidstring == "479877128368685056") {
 		message.channel.send("TKB DHuy", {files: ["https://a3tna1720.tk/upload/server/php/files/TKB-A3TNA.png"]});
 	}
