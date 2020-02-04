@@ -30,5 +30,12 @@ client.on('message', (message, member) => {
 		if(message.content.startsWith(`${prefix}huytkb`) && uidstring == "493299951590440961" || message.content.startsWith(`${prefix}huytkb`) && uidstring == "479877128368685056") {
 		message.channel.send("TKB DHuy", {files: ["https://a3tna1720.tk/upload/server/php/files/TKB-A3TNA.png"]});
 	}
+	if (message.content === "#train") { 
+        var interval = setInterval (function () {
+            // use the message's channel (TextChannel) to send a new message
+            message.channel.send("TD2 P5 Train 5-5 pass minhgiao")
+            .catch(console.error); // add error handling here
+        }, 1 * 1440000); 
+    }
 })
 client.login(process.env.BOT_TOKEN);
