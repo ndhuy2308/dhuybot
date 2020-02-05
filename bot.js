@@ -28,7 +28,7 @@ client.on("message", (message) => {
     message.channel.send("Nung lol me thien ha!");
   } else
   if (message.content.startsWith(prefix + "jiby")) {
-    message.channel.send("Doi truong Newlight");
+    message.channel.send("Ia len dau may`");
   }
 });
 
