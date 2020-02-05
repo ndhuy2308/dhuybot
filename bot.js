@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const prefix = "#";
 const client = new Discord.Client();
 client.once('ready', () => {
 	console.log('Ready!');
@@ -18,6 +17,17 @@ if(guild.systemChannel){
 	);
 }
 });
-
+let prefix = "#";
+client.on("message", (message) => {
+  // Exit and stop if the prefix is not there or if user is a bot
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+ 
+  if (message.content.startsWith(prefix + "7nung")) {
+    message.channel.send("Nung lol me thien ha");
+  } else
+  if (message.content.startsWith(prefix + "jiby")) {
+    message.channel.send("Doi truong Newlight");
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
