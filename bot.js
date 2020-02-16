@@ -26,12 +26,14 @@ client.on("message", (message) => {
  
   if (message.content.startsWith(prefix + "7nung")) {
     message.channel.send("Nung lol me thien ha!");
-  } else
-  if (message.content.startsWith(prefix + "jiby")) {
-    message.channel.send("Ia? len dau may`");
-  }
+  } 
   if (message.content.startsWith(prefix + "tkb")) {
     message.channel.send("TKB DHuy", {files: ["https://a3tna1720.tk/upload/server/php/files/TKB-A3TNA.png"]});
+  }
+  if (message.content.startsWith(prefix + "jiby")) {
+    number=29;
+    imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    message.channel.send( {file: ["https://newlight2017.tk/jiby/img/" + imageNumber + ".jpg"] } )
   }
 });
 
