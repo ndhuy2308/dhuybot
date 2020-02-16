@@ -33,9 +33,6 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "tkb")) {
     message.channel.send("TKB DHuy", {files: ["https://a3tna1720.tk/upload/server/php/files/TKB-A3TNA.png"]});
   }
-  if (message.content.startsWith(prefix + "jiby")) {
-    message.channel.send("JibydoubleC", {files: ["https://newlight2017.tk/jiby/"]});
-  }
 });
 
 client.login(process.env.BOT_TOKEN);
