@@ -33,7 +33,7 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "jiby")) {
     number=29;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
-    message.channel.send( {file: ["https://newlight2017.tk/jiby/img/" + imageNumber + ".jpg"] } )
+    message.channel.send("Ia? len dau may`", {files: ["https://newlight2017.tk/jiby/img/" + imageNumber + ".jpg"]});
   }
 });
 
