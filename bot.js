@@ -33,7 +33,16 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "jiby")) {
     number=79;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
-    message.channel.send({files: ["https://newlight2017.tk/jiby/img/" + imageNumber + ".jpg"]});
+        if (message.member.roles.get('526401395658850314'))
+      {      
+        message.channel.send({files: ["https://newlight2017.tk/jiby/img/" + imageNumber + ".jpg"]});
+      } 
+    else 
+      {
+        message.channel.send("Ban khong co quyen xem anh Jiby.");
+      }  
+	  
+    
   }
 });
 
