@@ -31,7 +31,7 @@ client.on("message", (message) => {
     message.channel.send("TKB DHuy", {files: ["https://a3tna1720.tk/upload/server/php/files/TKB-A3TNA.png"]});
   }
   if (message.content.startsWith(prefix + "jiby")) {
-    number=79;
+    number=80;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
         if (message.member.roles.get('526401395658850314'))
       {      
