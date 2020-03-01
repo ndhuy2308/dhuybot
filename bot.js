@@ -33,7 +33,7 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "jiby")) {
     number=80;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        if (message.member.roles.get('526401395658850314'))
+        if (message.member.roles.get('683588975071592460'))
       {      
         message.channel.send({files: ["https://newlight2017.tk/jiby/img/" + imageNumber + ".jpg"]});
       } 
