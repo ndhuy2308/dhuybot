@@ -48,7 +48,7 @@ client.on("message", (message) => {
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
         if (message.member.roles.get('687959988039057495'))
       {      
-        message.channel.send({files: ["https://newlight2017.tk/myluong/img/" + imageNumber + ".jpg"]});
+        message.channel.send({files: ["https://raw.githubusercontent.com/ndhuy2308/dhuybot/master/img/" + imageNumber + ".jpg"]});
       } 
     else 
       {
