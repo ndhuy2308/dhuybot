@@ -45,7 +45,7 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "myluongso1")) {
     number=70;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        if (message.member.roles.get('683588975071592460') or message.member.roles.get('687959988039057495'))
+        if (message.member.roles.get('687959988039057495'))
       {      
         message.channel.send({files: ["https://newlight2017.tk/myluong/img/" + imageNumber + ".jpg"]});
       } 
