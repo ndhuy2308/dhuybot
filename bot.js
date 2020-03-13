@@ -25,7 +25,7 @@ client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
  
   if (message.content.startsWith(prefix + "7nung")) {
-    message.channel.send("Nung lol me thien ha!");
+    message.channel.send("Nung lol me thien ha!!");
   } 
   if (message.content.startsWith(prefix + "tkb")) {
     message.channel.send("TKB DHuy", {files: ["https://a3tna1720.tk/upload/server/php/files/TKB-A3TNA.png"]});
@@ -44,7 +44,7 @@ client.on("message", (message) => {
   }
 
   if (message.content.startsWith(prefix + "myluongso1")) {
-    number=80;
+    number=70;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
         if (message.member.roles.get('687959988039057495'))
       {      
