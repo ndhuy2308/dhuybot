@@ -40,10 +40,11 @@ client.on("message", (message) => {
     else 
       {
         message.channel.send("Ban khong co quyen xem anh Jiby.");
-      }  
-	  
+      }  	  	  
+  }
+
   if (message.content.startsWith(prefix + "myluongso1")) {
-    number=70;
+    number=80;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
         if (message.member.roles.get('687959988039057495'))
       {      
@@ -51,10 +52,8 @@ client.on("message", (message) => {
       } 
     else 
       {
-        message.channel.send("Ban khong co quyen xem anh My Luong.");
-      }  
-	  
-    
+        message.channel.send("Ban khong co quyen xem anh My Luong so 1.");
+      }  	  	  
   }
 });
 
