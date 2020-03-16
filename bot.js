@@ -55,6 +55,19 @@ client.on("message", (message) => {
         message.channel.send("Ban khong co quyen xem anh My Luong so 1.");
       }  	  	  
   }
+	
+  if (message.content.startsWith(prefix + "pkn")) {
+    number=88;
+    imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        if (message.member.roles.get('689145789544529960'))
+      {      
+        message.channel.send({files: ["https://raw.githubusercontent.com/ndhuy2308/dhuybot/master/img-pkn/pkn-" + imageNumber + ".jpg"]});
+      } 
+    else 
+      {
+        message.channel.send("Ban khong co quyen xem anh PKN.");
+      }  	  	  
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
