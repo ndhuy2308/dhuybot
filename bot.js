@@ -57,7 +57,7 @@ client.on("message", (message) => {
   }
 	
   if (message.content.startsWith(prefix + "pkn")) {
-    number=88;
+    number=42;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
         if (message.member.roles.get('689145789544529960'))
       {      
