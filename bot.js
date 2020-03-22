@@ -68,7 +68,7 @@ client.on("message", (message) => {
         message.channel.send("Ban khong co quyen xem anh PKN.");
       }  	  	  
   }
- if (message.content.startsWith(prefix + 'avatar')) {
+ if (message.content.startsWith(prefix + "avatar")) {
     const user = message.mentions.users.first() || message.author;
     const avatarEmbed = new Discord.RichEmbed()
         .setColor(0x333333)
