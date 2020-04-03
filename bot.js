@@ -44,7 +44,7 @@ client.on("message", (message) => {
   }
 
   if (message.content.startsWith(prefix + "myluongso1")) {
-    number=88;
+    number=89;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
         if (message.member.roles.get('687959988039057495'))
       {      
