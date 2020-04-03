@@ -30,6 +30,9 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "tkb")) {
     message.channel.send("TKB DHuy", {files: ["https://a3tna1720.tk/upload/server/php/files/TKB-A3TNA.png"]});
   }
+  if (message.content.startsWith(prefix + "taivo")) {
+    message.channel.send("TKB DHuy", {files: ["https://raw.githubusercontent.com/ndhuy2308/dhuybot/master/img/tailovenhi.png"]});
+  }
   if (message.content.startsWith(prefix + "jiby")) {
     number=80;
     imageNumber= Math.floor (Math.random() * (number - 1 + 1)) + 1;
