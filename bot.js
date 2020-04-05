@@ -9,7 +9,7 @@ let guild = member.guild;
 let memberTag = member.user.tag; 
 if(guild.systemChannel){
 	member.guild.channels.get('694837319911342101').send(new Discord.RichEmbed() // Creating instance of Discord.RichEmbed
-	.setTitle("Một con gà mới đã vào Discord: ") // Calling method setTitle on constructor. 
+	.setTitle("Một con gà mới đã vào Newlight: ") // Calling method setTitle on constructor. 
 	.setDescription(memberTag) // Setting embed description
 	.setThumbnail(member.user.displayAvatarURL) // The image on the top right; method requires an url, not a path to file!
 	.addField("Số lượng thành viên hiện tại: ", member.guild.memberCount) // Adds a field; First parameter is the title and the second is the value.
