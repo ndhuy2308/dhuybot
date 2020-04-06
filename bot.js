@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
 client.on("ready", () => {
-  const channel = client.channels.get("595188556171968522");
+  const channel = client.channels.get("687585008759865410");
   if (!channel) return console.error("The channel does not exist!");
   channel.join().then(connection => {
     // Yay, it worked!
