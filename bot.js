@@ -1,8 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.once('ready', () => {
-  console.log('Ready!');
-})
+client.on("ready", () => {
+  const channel = client.channels.get("595188556171968522");
+  if (!channel) return console.error("The channel does not exist!");
+  channel.join().then(connection => {
+    // Yay, it worked!
+    console.log("Successfully connected.");
+  }).catch(e => {
+    // Oh no, it errored! Let's log it to console :)
+    console.error(e);
+  });
+});
 
 client.on("guildMemberAdd", (member) => { // Check out previous chapter for information about this event
 let guild = member.guild; 
